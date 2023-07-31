@@ -1,0 +1,86 @@
+#profile {
+	height: 82vh;
+	background-color: #3643bc;
+	margin-top: 2rem;
+	display: flex;
+	justify-content: space-around;
+}
+.profile_img{
+  width: 45%;
+  position: relative;
+}
+.calc_img {
+	width: 480px;
+	height: 429px;
+	position: absolute;
+	bottom: 4rem;
+	left: 4rem;
+}
+.profile_img svg {
+	width: 100%;
+	height: 100%;
+}
+.img_overlay {
+	position: absolute;
+	top: -98px;
+	left: -.9px;
+	width: 411px;
+	height: 540px;
+	border-radius: 188.9px;
+}
+
+
+/* cote gauche */
+
+.left.presentation{
+  width: 45%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  padding-left: 1.5rem;
+}
+.presentation h1{
+  color: #fff;
+  font-size: 67px;
+  font-weight: 400;
+}
+.presentation .dynamic-txts{
+  height: 90px;
+  line-height: 90px;
+  overflow: hidden;
+}
+.dynamic-txts li{
+  color: #fff;
+  list-style: none;
+  font-size: 67px;
+  font-weight: 500;
+  position: relative;
+  top: 0;
+  transition: all 2s ease-in-out;
+  animation: slide 12s steps(4) 3;
+}
+.dynamic-txts li span{
+  position: relative;
+}
+.dynamic-txts li span::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 90px;
+  width: 100%;
+  background: #3643bc;
+  border-left: 2px solid black;
+  animation: typing 3s steps(19) infinite;
+}
+@keyframes typing {
+  100% {
+    left: 100%;
+    margin: 0 -35px 0 35px;
+  }
+}
+@keyframes slide {
+  100% {
+    top: -360px;
+  }
+}

@@ -58,7 +58,7 @@
   position: relative;
   top: 0;
   transition: all 2s ease-in-out;
-  animation: slide 12s steps(4) 3;
+  animation: slide 12s steps(4) 1;
 }
 .dynamic-txts li span{
   position: relative;
@@ -71,12 +71,16 @@
   width: 100%;
   background: #3643bc;
   border-left: 2px solid black;
-  animation: typing 3s steps(19) infinite;
+  animation: typing 3s steps(18) 4;
 }
 @keyframes typing {
-  100% {
+  50% {
     left: 100%;
     margin: 0 -35px 0 35px;
+  }
+  100%{
+    right: 0;
+    margin: 0 35px 0 -35px;
   }
 }
 @keyframes slide {
